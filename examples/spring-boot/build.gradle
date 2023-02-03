@@ -17,3 +17,13 @@ targetCompatibility = 1.8
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 }
+
+jib {
+  to {
+    image = 'jibtest.azurecr.io/jibpoc:latest'
+    auth {
+      username = 'JibTest' 
+      password = 'nGTx8jVz+Ek8O4Jg7qtSaq0w+SxbbKmScEm3UwPCBB+ACRAkICeF'
+    }
+  }
+}
